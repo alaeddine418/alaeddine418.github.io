@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">Portfolio</div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="cv.html" class="active">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Mon CV</h1>
+            <p>Téléchargez mon curriculum vitae au format PDF</p>
+        </div>
+    </section>
+
+    <!-- CV Download Section -->
+    <section class="cv-section">
+        <div class="container">
+            <div class="cv-content">
+                <!-- CV Preview -->
+                <div class="cv-preview">
+                    <div class="cv-preview-header">
+                        <i class="fas fa-file-pdf"></i>
+                        <h2>Curriculum Vitae</h2>
+                    </div>
+                    <div class="cv-preview-body">
+                        <div class="cv-placeholder">
+                            <i class="fas fa-file-alt"></i>
+                            <p>Aperçu du CV</p>
+                            <small>Cliquez sur le bouton ci-dessous pour télécharger</small>
+                        </div>
+                        <!-- Alternative: Si vous avez une image de votre CV -->
+                        <!-- <img src="assets/cv-preview.jpg" alt="Aperçu du CV"> -->
+                    </div>
+                    <div class="cv-download-box">
+                        <a href="assets/CV_Votre_Nom.pdf" download="CV_Votre_Nom.pdf" class="btn-download">
+                            <i class="fas fa-download"></i>
+                            <span>Télécharger le CV (PDF)</span>
+                        </a>
+                        <p class="cv-info"><i class="fas fa-info-circle"></i> Dernière mise à jour : Janvier 2024</p>
+                    </div>
+                </div>
+
+                <!-- CV Info -->
+                <div class="cv-info-panel">
+                    <div class="info-card">
+                        <i class="fas fa-user"></i>
+                        <h3>Informations</h3>
+                        <ul>
+                            <li><strong>Nom :</strong> [Votre Nom]</li>
+                            <li><strong>Formation :</strong> Bac Techno STI2D</li>
+                            <li><strong>Disponibilité :</strong> Immédiate</li>
+                            <li><strong>Type de contrat :</strong> Alternance</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-file-alt"></i>
+                        <h3>Contenu du CV</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Parcours académique</li>
+                            <li><i class="fas fa-check"></i> Compétences techniques</li>
+                            <li><i class="fas fa-check"></i> Projets réalisés</li>
+                            <li><i class="fas fa-check"></i> Expériences (stages)</li>
+                            <li><i class="fas fa-check"></i> Langues</li>
+                            <li><i class="fas fa-check"></i> Centres d'intérêt</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3>Points Forts</h3>
+                        <ul>
+                            <li><i class="fas fa-star"></i> Motivé et curieux</li>
+                            <li><i class="fas fa-star"></i> Esprit d'équipe</li>
+                            <li><i class="fas fa-star"></i> Autonome</li>
+                            <li><i class="fas fa-star"></i> Créatif</li>
+                            <li><i class="fas fa-star"></i> Rigoureux</li>
+                        </ul>
+                    </div>
+
+                    <div class="info-card highlight-card">
+                        <i class="fas fa-briefcase"></i>
+                        <h3>Recherche Active</h3>
+                        <p>Je recherche activement une alternance pour la rentrée 2024-2025</p>
+                        <a href="contact.html" class="btn btn-primary btn-small">
+                            <i class="fas fa-envelope"></i> Me contacter
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CV Sections Preview -->
+    <section class="cv-sections-preview">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-eye"></i> Aperçu des Sections</h2>
+            <div class="cv-sections-grid">
+                <div class="cv-section-card">
+                    <div class="section-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Formation</h3>
+                    <p>Bac Technologique STI2D avec spécialisation en [Votre spécialité]</p>
+                    <a href="formations.html">Voir détails <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="cv-section-card">
+                    <div class="section-icon">
+                        <i class="fas fa-tools"></i>
+                    </div>
+                    <h3>Compétences</h3>
+                    <p>HTML, CSS, JavaScript, Python, Arduino et plus encore</p>
+                    <a href="formations.html#competences">Voir détails <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="cv-section-card">
+                    <div class="section-icon">
+                        <i class="fas fa-folder-open"></i>
+                    </div>
+                    <h3>Projets</h3>
+                    <p>Portfolio de projets scolaires et personnels variés</p>
+                    <a href="projets.html">Voir détails <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="cv-section-card">
+                    <div class="section-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Langues</h3>
+                    <p>Français (langue maternelle), Anglais (intermédiaire)</p>
+                    <a href="formations.html#langues">Voir détails <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instructions Section -->
+    <section class="instructions-section">
+        <div class="container">
+            <div class="instructions-box">
+                <i class="fas fa-info-circle"></i>
+                <div class="instructions-content">
+                    <h3>Comment utiliser mon CV ?</h3>
+                    <ol>
+                        <li>Cliquez sur le bouton "Télécharger le CV" ci-dessus</li>
+                        <li>Le fichier PDF sera téléchargé sur votre appareil</li>
+                        <li>Vous pourrez le consulter hors ligne ou l'imprimer</li>
+                        <li>N'hésitez pas à me contacter pour toute question</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alternative Formats -->
+    <section class="alternative-formats">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-file"></i> Autres Options</h2>
+            <div class="formats-grid">
+                <div class="format-card">
+                    <i class="fas fa-globe"></i>
+                    <h3>Consulter en ligne</h3>
+                    <p>Naviguez sur ce portfolio pour découvrir mon parcours de manière interactive</p>
+                    <a href="about.html" class="btn btn-outline btn-small">Explorer</a>
+                </div>
+                <div class="format-card">
+                    <i class="fab fa-linkedin"></i>
+                    <h3>LinkedIn</h3>
+                    <p>Retrouvez-moi sur LinkedIn pour plus de détails professionnels</p>
+                    <a href="#" class="btn btn-outline btn-small" target="_blank">Voir profil</a>
+                </div>
+                <div class="format-card">
+                    <i class="fas fa-envelope"></i>
+                    <h3>Contact Direct</h3>
+                    <p>Contactez-moi directement pour recevoir mon CV par email</p>
+                    <a href="contact.html" class="btn btn-outline btn-small">Contacter</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Une question sur mon profil ?</h2>
+            <p>N'hésitez pas à me contacter pour en discuter</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Me contacter
+                </a>
+                <a href="projets.html" class="btn btn-outline">
+                    <i class="fas fa-folder-open"></i> Voir mes projets
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Réseaux sociaux</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 [Votre Nom]. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

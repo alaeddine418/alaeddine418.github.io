@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projets - Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">Portfolio</div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="projets.html" class="active">Projets</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Mes Projets</h1>
+            <p>Découvrez mes réalisations scolaires et personnelles</p>
+        </div>
+    </section>
+
+    <!-- Filtres -->
+    <section class="projects-filters">
+        <div class="container">
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">Tous</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="scolaire">Scolaire</button>
+                <button class="filter-btn" data-filter="personnel">Personnel</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projets Grid -->
+    <section class="projects-section">
+        <div class="container">
+            <div class="projects-grid">
+                
+                <!-- Projet 1 - Portfolio -->
+                <div class="project-card" data-category="web personnel">
+                    <div class="project-image">
+                        <img src="assets/project-portfolio.jpg" alt="Portfolio">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Voir le projet"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="Code source"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3>Portfolio Personnel</h3>
+                        <p>Création de mon portfolio en ligne pour présenter mes compétences et projets. Design responsive et moderne.</p>
+                        <a href="#" class="project-details-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 2 - Site Web -->
+                <div class="project-card" data-category="web scolaire">
+                    <div class="project-image">
+                        <img src="assets/project-website.jpg" alt="Site web">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Voir le projet"><i class="fas fa-external-link-alt"></i></a>
+                                <a href="#" class="project-link" title="Code source"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">HTML</span>
+                            <span class="tag">CSS</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <h3>Site Vitrine Entreprise</h3>
+                        <p>Développement d'un site vitrine pour une entreprise fictive dans le cadre d'un projet scolaire.</p>
+                        <a href="#" class="project-details-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 3 - Arduino -->
+                <div class="project-card" data-category="scolaire">
+                    <div class="project-image">
+                        <img src="assets/project-arduino.jpg" alt="Projet Arduino">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Documentation"><i class="fas fa-file-alt"></i></a>
+                                <a href="#" class="project-link" title="Code source"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Arduino</span>
+                            <span class="tag">C++</span>
+                            <span class="tag">Électronique</span>
+                        </div>
+                        <h3>Système Domotique</h3>
+                        <p>Création d'un système domotique avec Arduino pour contrôler l'éclairage et la température d'une pièce.</p>
+                        <a href="#" class="project-details-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 4 - Application -->
+                <div class="project-card" data-category="personnel web">
+                    <div class="project-image">
+                        <img src="assets/project-app.jpg" alt="Application">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Démo"><i class="fas fa-play"></i></a>
+                                <a href="#" class="project-link" title="Code source"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">API</span>
+                            <span class="tag">CSS</span>
+                        </div>
+                        <h3>Application Météo</h3>
+                        <p>Application web interactive affichant les prévisions météo en temps réel en utilisant une API.</p>
+                        <a href="#" class="project-details-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 5 - Robotique -->
+                <div class="project-card" data-category="scolaire">
+                    <div class="project-image">
+                        <img src="assets/project-robot.jpg" alt="Robot">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Vidéo"><i class="fas fa-video"></i></a>
+                                <a href="#" class="project-link" title="Documentation"><i class="fas fa-file-pdf"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">Robotique</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Arduino</span>
+                        </div>
+                        <h3>Robot Suiveur de Ligne</h3>
+                        <p>Conception et programmation d'un robot autonome capable de suivre une ligne au sol.</p>
+                        <a href="#" class="project-details-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Projet 6 - Jeu -->
+                <div class="project-card" data-category="personnel web">
+                    <div class="project-image">
+                        <img src="assets/project-game.jpg" alt="Jeu">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" title="Jouer"><i class="fas fa-gamepad"></i></a>
+                                <a href="#" class="project-link" title="Code source"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Canvas</span>
+                            <span class="tag">Game Dev</span>
+                        </div>
+                        <h3>Jeu en JavaScript</h3>
+                        <p>Développement d'un jeu interactif en JavaScript utilisant le Canvas HTML5.</p>
+                        <a href="#" class="project-details-btn">En savoir plus <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Message si aucun projet -->
+            <div class="no-projects" style="display: none;">
+                <i class="fas fa-folder-open"></i>
+                <p>Aucun projet dans cette catégorie pour le moment</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences Projet -->
+    <section class="project-skills-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-star"></i> Technologies Maîtrisées</h2>
+            <div class="tech-icons">
+                <div class="tech-icon" title="HTML5">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="tech-icon" title="CSS3">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS3</span>
+                </div>
+                <div class="tech-icon" title="JavaScript">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="tech-icon" title="Git">
+                    <i class="fab fa-git-alt"></i>
+                    <span>Git</span>
+                </div>
+                <div class="tech-icon" title="GitHub">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="tech-icon" title="Python">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="tech-icon" title="Arduino">
+                    <i class="fas fa-microchip"></i>
+                    <span>Arduino</span>
+                </div>
+                <div class="tech-icon" title="Figma">
+                    <i class="fab fa-figma"></i>
+                    <span>Figma</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Intéressé par mon profil ?</h2>
+            <p>N'hésitez pas à me contacter pour discuter de vos projets</p>
+            <div class="cta-buttons">
+                <a href="contact.html" class="btn btn-primary">
+                    <i class="fas fa-envelope"></i> Me contacter
+                </a>
+                <a href="cv.html" class="btn btn-outline">
+                    <i class="fas fa-file-download"></i> Télécharger mon CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Réseaux sociaux</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 [Votre Nom]. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

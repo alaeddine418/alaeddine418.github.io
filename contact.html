@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">Portfolio</div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="formations.html">Formations</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Me Contacter</h1>
+            <p>Une question ? Un projet ? N'hésitez pas à me contacter</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Informations de contact -->
+                <div class="contact-info">
+                    <h2><i class="fas fa-address-card"></i> Mes Coordonnées</h2>
+                    <p class="contact-intro">
+                        Je suis toujours disponible pour discuter de nouvelles opportunités, 
+                        projets ou simplement échanger sur les technologies.
+                    </p>
+
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <a href="mailto:votre.email@example.com">votre.email@example.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Téléphone</h3>
+                                <a href="tel:+33600000000">06 XX XX XX XX</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Localisation</h3>
+                                <p>[Votre Ville], France</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Disponibilité</h3>
+                                <p>Lun - Ven : 9h - 18h</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Réseaux sociaux -->
+                    <div class="social-section">
+                        <h3><i class="fas fa-share-alt"></i> Réseaux Sociaux</h3>
+                        <div class="social-links-large">
+                            <a href="#" class="social-link" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="#" class="social-link" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="#" class="social-link" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="#" class="social-link" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Temps de réponse -->
+                    <div class="response-time">
+                        <i class="fas fa-bolt"></i>
+                        <p><strong>Temps de réponse moyen :</strong> 24-48h</p>
+                    </div>
+                </div>
+
+                <!-- Formulaire de contact -->
+                <div class="contact-form-container">
+                    <h2><i class="fas fa-paper-plane"></i> Envoyez-moi un message</h2>
+                    <form id="contactForm" class="contact-form">
+                        <div class="form-group">
+                            <label for="name">
+                                <i class="fas fa-user"></i> Nom complet *
+                            </label>
+                            <input 
+                                type="text" 
+                                id="name" 
+                                name="name" 
+                                placeholder="Votre nom"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">
+                                <i class="fas fa-envelope"></i> Email *
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder="votre.email@example.com"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">
+                                <i class="fas fa-phone"></i> Téléphone
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="phone" 
+                                name="phone" 
+                                placeholder="06 XX XX XX XX"
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">
+                                <i class="fas fa-tag"></i> Sujet *
+                            </label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Sélectionnez un sujet</option>
+                                <option value="alternance">Proposition d'alternance</option>
+                                <option value="stage">Proposition de stage</option>
+                                <option value="projet">Collaboration sur un projet</option>
+                                <option value="question">Question générale</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">
+                                <i class="fas fa-comment"></i> Message *
+                            </label>
+                            <textarea 
+                                id="message" 
+                                name="message" 
+                                rows="6" 
+                                placeholder="Votre message..."
+                                required
+                            ></textarea>
+                        </div>
+
+                        <div class="form-note">
+                            <i class="fas fa-info-circle"></i>
+                            <p>Les champs marqués d'un * sont obligatoires</p>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Envoyer le message</span>
+                        </button>
+
+                        <!-- Message de confirmation -->
+                        <div id="formMessage" class="form-message" style="display: none;"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-question-circle"></i> Questions Fréquentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3><i class="fas fa-briefcase"></i> Recherchez-vous une alternance ?</h3>
+                    <p>Oui ! Je recherche activement une alternance pour la rentrée 2024-2025 dans le domaine du développement web ou des systèmes numériques.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-calendar-alt"></i> Quelle est votre disponibilité ?</h3>
+                    <p>Je suis disponible dès septembre 2024 pour démarrer une alternance. Mon emploi du temps scolaire me permet d'être présent en entreprise plusieurs jours par semaine.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-map-marker-alt"></i> Acceptez-vous les propositions à distance ?</h3>
+                    <p>Je privilégie le présentiel pour une meilleure intégration, mais je suis ouvert aux propositions en télétravail partiel ou total selon les opportunités.</p>
+                </div>
+                <div class="faq-item">
+                    <h3><i class="fas fa-clock"></i> Quel est votre délai de réponse ?</h3>
+                    <p>Je réponds généralement sous 24 à 48h aux messages reçus. Pour les demandes urgentes, n'hésitez pas à me contacter par téléphone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Téléchargez mon CV</h2>
+            <p>Pour en savoir plus sur mon parcours et mes compétences</p>
+            <div class="cta-buttons">
+                <a href="cv.html" class="btn btn-primary">
+                    <i class="fas fa-file-download"></i> Télécharger le CV
+                </a>
+                <a href="projets.html" class="btn btn-outline">
+                    <i class="fas fa-folder-open"></i> Voir mes projets
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Réseaux sociaux</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 [Votre Nom]. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

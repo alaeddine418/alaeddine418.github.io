@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formations - Mon Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">Portfolio</div>
+            <button class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="formations.html" class="active">Formations</a></li>
+                <li><a href="projets.html">Projets</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Formations & Compétences</h1>
+            <p>Mon parcours académique et mes compétences techniques</p>
+        </div>
+    </section>
+
+    <!-- Formations Section -->
+    <section class="formations-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Diplômes & Formations</h2>
+            
+            <div class="formations-list">
+                <div class="formation-card">
+                    <div class="formation-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="formation-content">
+                        <span class="formation-period">2023 - 2025</span>
+                        <h3>Baccalauréat Technologique STI2D</h3>
+                        <p class="formation-location">[Nom du Lycée], [Ville]</p>
+                        <p class="formation-speciality">
+                            <strong>Spécialité :</strong> [Votre spécialité]
+                            <span class="info-tooltip" title="SIN: Systèmes d'Information et Numérique | ITEC: Innovation Technologique et Éco-Conception | EE: Énergies et Environnement | AC: Architecture et Construction">
+                                <i class="fas fa-info-circle"></i>
+                            </span>
+                        </p>
+                        <div class="formation-details">
+                            <h4>Enseignements principaux :</h4>
+                            <ul>
+                                <li>Innovation technologique</li>
+                                <li>Systèmes d'information et numérique</li>
+                                <li>Ingénierie et développement durable</li>
+                                <li>Physique-Chimie et Mathématiques</li>
+                                <li>Projet technique et technologique</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="formation-card">
+                    <div class="formation-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="formation-content">
+                        <span class="formation-period">2019 - 2023</span>
+                        <h3>Diplôme National du Brevet</h3>
+                        <p class="formation-location">[Nom du Collège], [Ville]</p>
+                        <p class="formation-mention">Mention : [Votre mention]</p>
+                    </div>
+                </div>
+
+                <!-- Ajoutez d'autres formations ici si nécessaire -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Compétences Section -->
+    <section class="competences-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-tools"></i> Compétences Techniques</h2>
+            
+            <div class="competences-categories">
+                <!-- Développement Web -->
+                <div class="competence-category">
+                    <h3><i class="fas fa-code"></i> Développement Web</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">HTML5</span>
+                                <span class="skill-level">80%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">CSS3</span>
+                                <span class="skill-level">75%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">JavaScript</span>
+                                <span class="skill-level">65%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 65%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Git / GitHub</span>
+                                <span class="skill-level">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programmation -->
+                <div class="competence-category">
+                    <h3><i class="fas fa-laptop-code"></i> Programmation</h3>
+                    <div class="skills-list">
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Python</span>
+                                <span class="skill-level">60%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 60%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">C/C++</span>
+                                <span class="skill-level">50%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 50%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Arduino</span>
+                                <span class="skill-level">55%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 55%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Outils & Logiciels -->
+                <div class="competence-category">
+                    <h3><i class="fas fa-wrench"></i> Outils & Logiciels</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag"><i class="fas fa-figma"></i> Figma</span>
+                        <span class="skill-tag"><i class="fab fa-github"></i> GitHub</span>
+                        <span class="skill-tag"><i class="fas fa-terminal"></i> Visual Studio Code</span>
+                        <span class="skill-tag"><i class="fas fa-cube"></i> SolidWorks</span>
+                        <span class="skill-tag"><i class="fas fa-file-excel"></i> Pack Office</span>
+                        <span class="skill-tag"><i class="fas fa-pencil-ruler"></i> Photoshop</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Soft Skills -->
+    <section class="soft-skills-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-users"></i> Compétences Transversales</h2>
+            <div class="soft-skills-grid">
+                <div class="soft-skill-card">
+                    <i class="fas fa-lightbulb"></i>
+                    <h3>Créativité</h3>
+                    <p>Capacité à proposer des solutions innovantes</p>
+                </div>
+                <div class="soft-skill-card">
+                    <i class="fas fa-user-friends"></i>
+                    <h3>Travail d'équipe</h3>
+                    <p>Collaboration efficace sur des projets collectifs</p>
+                </div>
+                <div class="soft-skill-card">
+                    <i class="fas fa-brain"></i>
+                    <h3>Résolution de problèmes</h3>
+                    <p>Approche analytique et méthodique</p>
+                </div>
+                <div class="soft-skill-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Organisation</h3>
+                    <p>Gestion efficace du temps et des priorités</p>
+                </div>
+                <div class="soft-skill-card">
+                    <i class="fas fa-book-reader"></i>
+                    <h3>Curiosité</h3>
+                    <p>Veille technologique constante</p>
+                </div>
+                <div class="soft-skill-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Communication</h3>
+                    <p>Expression claire et écoute active</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Langues -->
+    <section class="langues-section">
+        <div class="container">
+            <h2 class="section-title"><i class="fas fa-language"></i> Langues</h2>
+            <div class="langues-list">
+                <div class="langue-item">
+                    <div class="langue-header">
+                        <h3>Français</h3>
+                        <span class="langue-level">Langue maternelle</span>
+                    </div>
+                    <div class="langue-bar">
+                        <div class="langue-progress" style="width: 100%"></div>
+                    </div>
+                </div>
+                <div class="langue-item">
+                    <div class="langue-header">
+                        <h3>Anglais</h3>
+                        <span class="langue-level">Intermédiaire (B1)</span>
+                    </div>
+                    <div class="langue-bar">
+                        <div class="langue-progress" style="width: 60%"></div>
+                    </div>
+                </div>
+                <div class="langue-item">
+                    <div class="langue-header">
+                        <h3>Espagnol</h3>
+                        <span class="langue-level">Notions (A2)</span>
+                    </div>
+                    <div class="langue-bar">
+                        <div class="langue-progress" style="width: 40%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Découvrez mes réalisations</h2>
+            <p>Consultez mes projets pour voir mes compétences en action</p>
+            <div class="cta-buttons">
+                <a href="projets.html" class="btn btn-primary">
+                    <i class="fas fa-folder-open"></i> Mes projets
+                </a>
+                <a href="cv.html" class="btn btn-outline">
+                    <i class="fas fa-file-pdf"></i> Télécharger mon CV
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="about.html">À propos</a></li>
+                        <li><a href="projets.html">Projets</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Réseaux sociaux</h4>
+                    <div class="social-links">
+                        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 [Votre Nom]. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
